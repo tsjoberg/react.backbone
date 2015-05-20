@@ -34,7 +34,7 @@
 
         var triggerUpdate = behavior.updateScheduler(function() {
             if (component.isMounted()) {
-                (component.onModelChange || component.forceUpdate).call(component);
+                component.forceUpdate();
             }
         });
 
